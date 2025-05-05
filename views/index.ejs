@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f7;
+    }
+    header {
+      background: #03c75a;
+      padding: 10px 20px;
+      color: white;
+      font-size: 24px;
+    }
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .search-box input {
+      width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+    .search-box button {
+      padding: 10px 20px;
+      background: #03c75a;
+      border: none;
+      color: white;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    .news-section {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .news-item {
+      margin-bottom: 10px;
+    }
+    .news-item a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header><%= title %></header>
+
+  <div class="search-box">
+    <input type="text" placeholder="검색어를 입력하세요">
+    <button>검색</button>
+  </div>
+
+  <nav>
+    <a href="#">뉴스</a>
+    <a href="#">연예</a>
+    <a href="#">스포츠</a>
+    <a href="#">쇼핑</a>
+    <a href="#">메일</a>
+  </nav>
+
+  <div class="news-section">
+    <div class="news-item"><a href="#">[속보] 주요 뉴스 제목 1</a></div>
+    <div class="news-item"><a href="#">[단독] 오늘의 핫이슈 2</a></div>
+    <div class="news-item"><a href="#">[경제] 시장 동향 요약 3</a></div>
+  </div>
+
+</body>
+</html>
